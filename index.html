@@ -19,8 +19,11 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <header class="header-cont">
+    <body>
+
+  <!-------------------------------------HEADER---------------------------------------------->
+
+  <header class="header-cont">
       <div class="container header-container">
         <nav class="header-navi">
           <a class="header-navi-logo" href="./index.html"
@@ -55,8 +58,108 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="btn-burger-open">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
+
+
+<!-------------------------------MOB-MENU--------------------------------------------->
+
+<div class="mob-menu-burger">
+<div>
+  <button class="mob-menu-close-btn" type="button">
+    <svg class="mob-menu-btn-svg" fill="#2E2F42" width="8" height="8">
+      <use href="./images/icons.svg#icon-close-black-18dp"></use>
+    </svg>
+  </button>
+
+  <nav class="mob-menu-navi">
+    <ul class="mob-menu-nav-list">
+      <li class="mob-nav-list-li">
+        <a class="mob-menu-navi-link" href="./index.html">Studio</a>
+      </li>
+      <li class="mob-nav-list-li">
+        <a class="mob-menu-navi-link" href="">Portfolio</a>
+      </li>
+      <li class="mob-nav-list-li">
+        <a class="mob-menu-navi-link" href="">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div>
+    <ul class="mob-menu-addr-list">
+  <li class="mob-addr-li-list">
+    <a class="mob-menu-address" href="mailto:info@devstudio.com"
+    >info@devstudio.com</a
+    >
+  </li>
+
+  <li>
+    <a class="mob-menu-address" href="tel:+110001111111"
+      >+11 (000) 111-11-11</a
+    >
+  </li>
+</ul>
+
+<ul class="mob-menu-ul-team">
+  <li class="mob-menu-li-team">
+    <a class="mob-menu-linc-team" href="">
+      <svg
+        class="mob-menu-icon-svg"
+        fill="#f4f4fd"
+        width="24"
+        height="24"
+      >
+        <use href="./images/icons.svg#icon-instagram-2"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="mob-menu-li-team">
+    <a class="mob-menu-linc-team" href="">
+      <svg
+        class="mob-menu-icon-svg"
+        fill="#f4f4fd"
+        width="24"
+        height="24"
+      >
+        <use href="./images/icons.svg#icon-twitter-1"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="mob-menu-li-team">
+    <a class="mob-menu-linc-team" href="">
+      <svg
+        class="mob-menu-icon-svg"
+        fill="#f4f4fd"
+        width="24"
+        height="24"
+      >
+        <use href="./images/icons.svg#icon-facebook-1"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="mob-menu-li-team">
+    <a class="mob-menu-linc-team" href="">
+      <svg
+        class="mob-menu-icon-svg"
+        fill="#f4f4fd"
+        width="24"
+        height="24"
+      >
+        <use href="./images/icons.svg#icon-linkedin-1"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
+</div>
+</div>
     </header>
+<!------------------------------------SECTION MAIN------------------------------------------->
 
     <main>
       <section class="main-hero section">
@@ -66,8 +169,10 @@
         </div>
       </section>
 
+<!---------------------------------SECTION ADVANTAGES---------------------------------------->
+
       <section class="main-advantages section">
-        <div class="container">
+        <div class="container cont-advan">
           <h2 class="visually-hidden">Our advantages</h2>
 
           <ul class="main-advantages-list">
@@ -126,6 +231,8 @@
         </div>
       </section>
 
+<!------------------------------------SECTION TEAM------------------------------------------>
+
       <section class="main-team section">
         <div class="container team-cont-div">
           <h2 class="main-team-title">Our Team</h2>
@@ -134,7 +241,8 @@
             <li class="team-list-li">
               <img
                 class="main-team-img"
-                src="./images/img.jpg"
+                srcset="./images/img-mark-2x.jpg 2x"
+                src="./images/img-mark-1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -202,7 +310,8 @@
             <li class="team-list-li">
               <img
                 class="main-team-img"
-                src="./images/img(1).jpg"
+                srcset="./images/img-tom-2x.jpg"
+                src="./images/img-tom-1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -266,7 +375,8 @@
             <li class="team-list-li">
               <img
                 class="main-team-img"
-                src="./images/img(2).jpg"
+                srcset="./images/img-camila-2x.jpg"
+                src="./images/img-camila-1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -330,7 +440,8 @@
             <li class="team-list-li">
               <img
                 class="main-team-img"
-                src="./images/img(3).jpg"
+                srcset="./images/img-daniel-2x.jpg"
+                src="./images/img-daniel-1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -394,20 +505,44 @@
         </div>
       </section>
 
+<!----------------------------------SECTION PORTFOLIO---------------------------------------->
+
       <section class="portfolio section">
-        <div class="container">
+        <div class="container div-portfolio">
           <h2 class="portfolio-title-main">Our Portfolio</h2>
 
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrapp">
-                <img
-                  class="portfolio-jpg-b"
-                  src="./images/img-0.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/img-1-desc-1x.jpg 1x,
+                      ./images/img-1-desc-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-1-tab-1x.jpg 1x,
+                      ./images/img-1-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-1-mob-1x.jpg 1x,
+                      ./images/img-1-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-jpg-b"
+                    src="./images/img-1-desc-1x.jpg"
+                    alt="Banking App"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -423,13 +558,35 @@
 
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrapp">
-                <img
-                  class="portfolio-jpg-b"
-                  src="./images/img-1.jpg"
-                  alt="Cashless Payment"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/img-2-desc-1x.jpg 1x,
+                      ./images/img-2-desc-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-2-tab-1x.jpg 1x,
+                      ./images/img-2-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-2-mob-1x.jpg 1x,
+                      ./images/img-2-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-jpg-b"
+                    src="./images/img-2-desc-1x.jpg"
+                    alt="Cashless Payment"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -445,13 +602,35 @@
 
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrapp">
-                <img
-                  class="portfolio-jpg-b"
-                  src="./images/img-2.jpg"
-                  alt="Meditation App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/img-3-desc-1x.jpg 1x,
+                      ./images/img-3-desc-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-3-tab-1x.jpg 1x,
+                      ./images/img-3-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-3-mob-1x.jpg 1x,
+                      ./images/img-3-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-jpg-b"
+                    src="./images/img-3-desc-1x.jpg"
+                    alt="Meditation App"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -467,13 +646,35 @@
 
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrapp">
-                <img
-                  class="portfolio-jpg-b"
-                  src="./images/img-3.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/img-4-desc-1x.jpg 1x,
+                      ./images/img-4-desc-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-4-tab-1x.jpg 1x,
+                      ./images/img-4-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-4-mob-1x.jpg 1x,
+                      ./images/img-4-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-jpg-b"
+                    src="./images/img-4-desc-1x.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -489,13 +690,35 @@
 
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrapp">
-                <img
-                  class="portfolio-jpg-b"
-                  src="./images/img-4.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/img-5-desc-1x.jpg 1x,
+                      ./images/img-5-desc-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-5-tab-1x.jpg 1x,
+                      ./images/img-5-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-5-mob-1x.jpg 1x,
+                      ./images/img-5-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-jpg-b"
+                    src="./images/img-5-desc-1x.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
+                </picture>
 
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -511,13 +734,36 @@
 
             <li class="portfolio-list-item">
               <div class="portfolio-cover-wrapp">
-                <img
-                  class="portfolio-jpg-b"
-                  src="./images/img-5.jpg"
-                  alt="Online Courses"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/img-6-desc-1x.jpg 1x,
+                      ./images/img-6-desc-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/img-6-tab-1x.jpg 1x,
+                      ./images/img-6-tab-2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/img-6-mob-1x.jpg 1x,
+                      ./images/img-6-mob-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-jpg-b"
+                    src="./images/img-6-desc-1x.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -534,8 +780,10 @@
       </section>
     </main>
 
+<!---------------------------------------FOOTER---------------------------------------------->
+
     <footer class="footer">
-      <div class="foot-div-div">
+      <div class="foot-div-div container">
         <div class="foot-div">
           <a class="footer-logo" href="./index.html"
             >Web<span class="footer-span">Studio</span></a
@@ -601,30 +849,38 @@
             </li>
           </ul>
         </div>
+
         <div class="div-subscribe-form">
           <p class="subscribe-text">Subscribe</p>
           <form class="subscribe-email">
-            <label for="subscribe-email-input-label" class="subscribe-email-input-label">
-            <input
-              class="subscribe-email-input"
-              type="email"
-              name="subscribe-email-input"
-              placeholder="E-mail"
-              id="subscribe-email-input-label"
-            />
-          </label>
+            <label
+              for="subscribe-email-input-label"
+              class="subscribe-email-input-label"
+            >
+              <input
+                class="subscribe-email-input"
+                type="email"
+                name="subscribe-email-input"
+                placeholder="E-mail"
+                id="subscribe-email-input-label"
+              />
+            </label>
             <button type="submit" class="sub-btn-sub">
               Subscribe
               <svg class="icon-frame-svg" width="24" height="24" fill="#ffffff">
-                <use class="icon-Frame-3-use" href="./images/icons.svg#icon-Frame-3"></use>
+                <use
+                  class="icon-Frame-3-use"
+                  href="./images/icons.svg#icon-Frame-3"
+                ></use>
               </svg>
             </button>
           </form>
         </div>
       </div>
     </footer>
-
-    <div class="backdrop is-open">
+<!-------------------------------------MODAL WINDOW------------------------------------------>
+    <div class="backdrop"> 
+      
       <div class="modal-window">
         <button class="close-btn" type="button">
           <svg class="close-btn-svg" fill="#2E2F42" width="8" height="8">
@@ -683,14 +939,14 @@
 
           <div class="modal-div-coment">
             <label for="user-comment" class="modal-label">Comment</label>
-              <textarea
-                class="user-textarea"
-                name="user-comment"
-                id="user-comment"
-                rows="10"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <textarea
+              class="user-textarea"
+              name="user-comment"
+              id="user-comment"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
           <div class="checkbox">
             <input
@@ -702,8 +958,16 @@
             />
             <label for="user-privacy" class="check-label"
               ><span class="user-privacy-span"
-                ><svg class="icon-vector-svg" width="10" height="8" fill="#F4F4FD">
-                  <use href="./images/icons.svg#icon-Vector" class="icon-Vector-svg-svg"></use></svg></span
+                ><svg
+                  class="icon-vector-svg"
+                  width="10"
+                  height="8"
+                  fill="#F4F4FD"
+                >
+                  <use
+                    href="./images/icons.svg#icon-Vector"
+                    class="icon-Vector-svg-svg"
+                  ></use></svg></span
               >I accept the terms and conditions of the
               <a class="check-link" href=".index.html">Privacy Policy</a></label
             >
@@ -712,5 +976,8 @@
         </form>
       </div>
     </div>
+
+    ----->
+
   </body>
 </html>
