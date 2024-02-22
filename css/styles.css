@@ -744,6 +744,8 @@ letter-spacing: 0.02em;
 
 @media (min-width: 1158px) {
   .main-team-list {
+    display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
   }
